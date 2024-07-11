@@ -14,21 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
         sideMenu.classList.remove('open');
         overlay.style.display = 'none';
     });
-    function toggleMenu(event) {
-        event.preventDefault(); // 기본 이벤트 방지
-        sideMenu.classList.toggle('open');
-        overlay.style.display = sideMenu.classList.contains('open') ? 'block' : 'none';
-    }
-    function closeMenu(event) {
-        event.preventDefault(); // 기본 이벤트 방지
-        sideMenu.classList.remove('open');
-        overlay.style.display = 'none';
-    }
-
-    // 클릭과 터치 이벤트 모두 처리
-    menuToggle.addEventListener('click', toggleMenu);
-    menuToggle.addEventListener('touchend', toggleMenu);
-
-    overlay.addEventListener('click', closeMenu);
-    overlay.addEventListener('touchend', closeMenu);
 });
