@@ -1,0 +1,56 @@
+/* 파일명: toggle-side-menu-styles.css */
+
+#menu-toggle {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#side-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+    z-index: 1001;
+}
+
+#side-menu.open {
+    left: 0;
+}
+
+#side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#side-menu ul li {
+    padding: 10px 20px;
+}
+
+#side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
